@@ -82,7 +82,7 @@ class ProductPage extends React.Component {
     };
     componentDidMount = () => {
         var data = {
-            type: "equipment",
+            type: process.env.ELK_TYPE,
             id: this.props.match.params.id
         }
         appbaseRef.get(data).on('data', response => {
