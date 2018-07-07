@@ -4,7 +4,7 @@ import Appbase from 'appbase-js';
 const appbaseRef = new Appbase({
 	url: "https://scalr.api.appbase.io",
 	app: "evolumebr-prd",
-	credentials: "xYM80w0w7:bb421d67-1ea4-43de-b213-91c81bc24514"
+	credentials: "HYmpa2P0V:239b7718-4872-48af-b63d-9fba2b64f864"
 });
 
 export {appbaseRef as default};
