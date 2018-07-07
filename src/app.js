@@ -12,6 +12,7 @@ import { firebase } from './firebase/firebase';
 
 const store = configureStore();
 
+
 const jsx = (
     <Provider store={store}>
         <AppRouter />
