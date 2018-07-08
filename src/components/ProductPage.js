@@ -9,8 +9,6 @@ import 'react-dates/initialize';
 import 'react-dates/lib/css/_datepicker.css';
 import ModalPage from './ModalPage';
 
-
-
 class ProductPage extends React.Component {
     constructor(props) {
         super(props);
@@ -36,7 +34,7 @@ class ProductPage extends React.Component {
                 days: 1,
                 focusedInput: null,
                 data: [],
-                error: ''
+                error: undefined
             }
     }
     handleSelectedOption(){
@@ -108,7 +106,8 @@ class ProductPage extends React.Component {
                     contact: response._source.contact,
                     image: response._source.image,
                     data: response._source,
-                    days: 1
+                    days: 1,
+                    error: undefined 
                 });
             }
         }).on('error', error => {

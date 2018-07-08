@@ -2,10 +2,6 @@ import React from 'react';
 import Modal from 'react-modal';
 
 const ModalPage = (props) => {
-
-
-
-
     return (
         <Modal
             isOpen={!!props.selectedOption}

@@ -6,9 +6,6 @@ import { getCustomer, makePayment, getCustomersMoip } from './CheckOutCore';
 import MoipValidator from '../api/moip/validator';
 import ModalPage from './ModalPage';
 
-
-
-
 class CheckOutForm extends React.Component {
     constructor(props) {
         super(props);
@@ -60,7 +57,7 @@ class CheckOutForm extends React.Component {
             card_expirationDate: '',
             data: [],
             moip: [],
-            error: ''
+            error: undefined
         }
     };
 
@@ -420,7 +417,7 @@ class CheckOutForm extends React.Component {
                     card_saveCard: false,
                     data: fire,
                     moip: moip,
-                    error: ''
+                    error: undefined
                 });
             }
         }).on('error', error => {
