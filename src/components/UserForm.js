@@ -78,7 +78,7 @@ class UserForm extends React.Component {
             return false;
         }
         else if (!this.state.terms) {
-            this.setState(() => ({ error: "Por favor, acertar os termos de uso!" }));
+            this.setState(() => ({ error: "Por favor, aceitar os termos de uso!" }));
             return false;
         }
 
