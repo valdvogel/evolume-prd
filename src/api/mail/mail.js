@@ -40,7 +40,7 @@ export function send(name, to, info, type) {
             ses_mail = ses_mail + "<table cellspacing='0' cellpadding='0' border='0' width='100%'>"
             ses_mail = ses_mail + "<tr>";
             ses_mail = ses_mail + "<td>";
-            ses_mail = ses_mail + "<img src='"+ info.image+ "' alt='Equipamento Evolume' width='298px' height='298px'/>";
+            ses_mail = ses_mail + "<img src='" + info.image + "' alt='Equipamento Evolume' width='298px' height='298px'/>";
             ses_mail = ses_mail + "</td>";
             ses_mail = ses_mail + "<td>";
             ses_mail = ses_mail + "<table cellspacing='0' cellpadding='0' border='0' width='500'>"
@@ -103,7 +103,7 @@ export function send(name, to, info, type) {
             ses_mail = ses_mail + "<table cellspacing='0' cellpadding='0' border='0' width='100%'>"
             ses_mail = ses_mail + "<tr>";
             ses_mail = ses_mail + "<td>";
-            ses_mail = ses_mail + "<img src='"+ info.image+ "' alt='Equipamento Evolume' width='298px' height='298px'/>";
+            ses_mail = ses_mail + "<img src='" + info.image + "' alt='Equipamento Evolume' width='298px' height='298px'/>";
             ses_mail = ses_mail + "</td>";
             ses_mail = ses_mail + "<td>";
             ses_mail = ses_mail + "<table cellspacing='0' cellpadding='0' border='0' width='500'>"
@@ -157,7 +157,7 @@ export function send(name, to, info, type) {
             ses_mail = ses_mail + "<br> Se você solicitou essa verificação, confirme seu e-mail clicando no link abaixo para confirmar sua identidade. Sua solicitação não será processada, a menos que você confirme o endereço através do link.";
             ses_mail = ses_mail + "<br/>";
             ses_mail = ses_mail + "<br/>";
-            ses_mail = ses_mail + "<a title='Confirmar meu email' href='http://www.evolume.com.br/confirmacao?id=" + info + "' target='_self'>Confirmar meu email</a>";
+            ses_mail = ses_mail + "<a title='Confirmar meu email' href='" + process.env.URL_ROOT_APP + "/confirmacao?id=" + info + "' target='_self'>Confirmar meu email</a>";
             ses_mail = ses_mail + "<br/>";
             ses_mail = ses_mail + "<br> Sua confirmação, expira 24 horas após o seu pedido de confirmação original.";
             ses_mail = ses_mail + "<br/>";
@@ -192,7 +192,7 @@ export function send(name, to, info, type) {
             ses_mail = ses_mail + "<br> Se você solicitou essa verificação, confirme seu e-mail clicando no link abaixo para confirmar sua identidade. Sua solicitação não será processada, a menos que você confirme o endereço através do link.";
             ses_mail = ses_mail + "<br/>";
             ses_mail = ses_mail + "<br/>";
-            ses_mail = ses_mail + "<a title='Confirmar meu email' href='http://www.evolume.com.br/novasenha?id=" + info + "' target='_self'>Reiniciar minha senha</a>";
+            ses_mail = ses_mail + "<a title='Confirmar meu email' href='" + process.env.URL_ROOT_APP + "/novasenha?id=" + info + "' target='_self'>Reiniciar minha senha</a>";
             ses_mail = ses_mail + "<br/>";
             ses_mail = ses_mail + "<br> Sua confirmação, expira 24 horas após o seu pedido de confirmação original.";
             ses_mail = ses_mail + "<br/>";
@@ -219,7 +219,7 @@ export function send(name, to, info, type) {
             ses_mail = ses_mail + "Content-Type: multipart/mixed; boundary=\"NextPart\"\n\n";
             ses_mail = ses_mail + "--NextPart\n";
             ses_mail = ses_mail + "Content-Type: text/html; charset=utf-8\n\n";
-            
+
             ses_mail = ses_mail + "<html><head><meta charset='utf-8'/><title>Evolume - Aluguel de acessório para carros</title><body>";
             ses_mail = ses_mail + "<h3>Olá, " + name + "!</h3>";
             ses_mail = ses_mail + "<br/> Reset de senha realizado na plataforma.";
@@ -247,7 +247,7 @@ export function send(name, to, info, type) {
             console.log(err);
         }
         else {
-           // console.log(data);
+            // console.log(data);
         }
     });
 
