@@ -5,6 +5,7 @@ import moment from 'moment';
 aws.config.accessKeyId = process.env.AWS_ACCESSKEYID;
 aws.config.secretAccessKey = process.env.AWS_SECRETACCESSKEY;
 aws.config.region = process.env.AWS_REGION;
+const url = process.env.URL_ROOT_APP;
 
 var fromMail = "jose@evolume.com.br";
 
@@ -157,7 +158,7 @@ export function send(name, to, info, type) {
             ses_mail = ses_mail + "<br> Se você solicitou essa verificação, confirme seu e-mail clicando no link abaixo para confirmar sua identidade. Sua solicitação não será processada, a menos que você confirme o endereço através do link.";
             ses_mail = ses_mail + "<br/>";
             ses_mail = ses_mail + "<br/>";
-            ses_mail = ses_mail + "<a title='Confirmar meu email' href='" + process.env.URL_ROOT_APP + "/confirmacao?id=" + info + "' target='_self'>Confirmar meu email</a>";
+            ses_mail = ses_mail + "<a title='Confirmar meu email' href='" + url + "/confirmacao?id=" + info + "' target='_self'>Confirmar meu email</a>";
             ses_mail = ses_mail + "<br/>";
             ses_mail = ses_mail + "<br> Sua confirmação, expira 24 horas após o seu pedido de confirmação original.";
             ses_mail = ses_mail + "<br/>";
@@ -192,7 +193,7 @@ export function send(name, to, info, type) {
             ses_mail = ses_mail + "<br> Se você solicitou essa verificação, confirme seu e-mail clicando no link abaixo para confirmar sua identidade. Sua solicitação não será processada, a menos que você confirme o endereço através do link.";
             ses_mail = ses_mail + "<br/>";
             ses_mail = ses_mail + "<br/>";
-            ses_mail = ses_mail + "<a title='Confirmar meu email' href='" + process.env.URL_ROOT_APP + "/novasenha?id=" + info + "' target='_self'>Reiniciar minha senha</a>";
+            ses_mail = ses_mail + "<a title='Confirmar meu email' href='" + url + "/novasenha?id=" + info + "' target='_self'>Reiniciar minha senha</a>";
             ses_mail = ses_mail + "<br/>";
             ses_mail = ses_mail + "<br> Sua confirmação, expira 24 horas após o seu pedido de confirmação original.";
             ses_mail = ses_mail + "<br/>";

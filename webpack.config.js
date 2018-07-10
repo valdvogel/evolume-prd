@@ -78,7 +78,8 @@ module.exports = (env) => {
                 'process.env.MOIP_URL_ROOT': JSON.stringify(process.env.MOIP_URL_ROOT),
                 'process.env.MOIP_USERNAME': JSON.stringify(process.env.MOIP_USERNAME),
                 'process.env.MOIP_PASSWORD': JSON.stringify(process.env.MOIP_PASSWORD),
-                'process.env.MOIP_AUTH': JSON.stringify(process.env.MOIP_AUTH)
+                'process.env.MOIP_AUTH': JSON.stringify(process.env.MOIP_AUTH),
+                'process.env.URL_ROOT_APP': JSON.stringify(process.env.URL_ROOT_APP)
             })
         ],
         devtool: isProduction ? 'source-map' : 'inline-source-map',
