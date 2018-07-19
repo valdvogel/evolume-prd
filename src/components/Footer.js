@@ -48,7 +48,7 @@ const Footer = () => (
                 <h5><img src="https://s3.us-east-2.amazonaws.com/evolumewebappimages/telephone.png" width="20" height="20" /> Contato</h5>
                 <ul>
                     <li><a href="mailto:contato@evolume.com.br">e-mail: contato@evolume.com.br</a></li>
-                    <li><a href="#">Tel.: (11) 3224-7890</a></li>
+                    <li><a href="#">Tel.: (11) 98139-0154</a></li>
                 </ul>
                 <div className="social-icons">
                     <a href="https://www.facebook.com/evolumebr" target="_blank" className="facebook"><img src="https://s3.us-east-2.amazonaws.com/evolumewebappimages/facebook-logo.png" width="25" height="25" /></a>
