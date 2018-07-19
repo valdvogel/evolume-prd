@@ -1,5 +1,5 @@
 import React from 'react';
-import { ReactiveBase, DataSearch, RangeSlider, ResultCard } from '@appbaseio/reactivesearch';
+import { ReactiveBase, DataSearch, RangeSlider, ResultCard, SingleList,SingleDataList } from '@appbaseio/reactivesearch';
 
 
 
@@ -7,10 +7,10 @@ class LocatarioPage extends React.Component {
     componentDidMount = () => {
 
     };
-    
+
     constructor(props) {
         super(props);
-        
+
         const param = this.props.location.pathname.substring(this.props.location.pathname.lastIndexOf('/') + 1);
         const value = param == 'locatario' ? '' : param;
         this.state = {
@@ -39,6 +39,17 @@ class LocatarioPage extends React.Component {
                             highlight={true}
                             defaultSelected={this.state.search}
                         />
+
+                        <DataSearch
+                            componentId="CitySensor"
+                            dataField="city"
+                            title="Cidade :"
+                            autosuggest={false}
+                            placeholder="Cidade"
+                            iconPosition="left"
+                            className="search"
+                        />
+
                         <RangeSlider
                             componentId="PriceSensor"
                             dataField="price"
@@ -77,6 +88,7 @@ class LocatarioPage extends React.Component {
                                     <div className="price">R$ {data.price}</div>
                                     <p className="info">Contato : {data.contact}</p>
                                     <p className="info">Estrela : {data.rate} estrelas</p>
+                                    <p className="info">Cidade : {data.city}</p>
                                 </div>
                             ),
                             url: '/produto/' + data._id
@@ -84,7 +96,7 @@ class LocatarioPage extends React.Component {
                         target="_self"
                         pagination
                         react={{
-                            and: ['SearchSensor', 'GuestSensor', 'PriceSensor', 'DateRangeSensor', 'search'],
+                            and: ['SearchSensor', 'CitySensor', 'PriceSensor'],
                         }}
                         innerClass={{
                             resultStats: 'result-stats',
@@ -94,7 +106,7 @@ class LocatarioPage extends React.Component {
                         }}
                     />
                 </ReactiveBase>
-                
+
 
             </div>
 
