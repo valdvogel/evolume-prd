@@ -28,9 +28,9 @@ const AboutUsPage = () => (
                 </header>
                 <div className="box alt">
                     <div className="flex flex 2">
-                        <div className="4u">
+                        <div className="6u">
                             <div className="articleheader">
-                            <Link to={`https://www.linkedin.com/in/belloluciano/`}>
+                                <Link to={`https://www.linkedin.com/in/belloluciano/`}>
                                     Luciano Bello
                             </Link>
                             </div>
@@ -39,46 +39,64 @@ const AboutUsPage = () => (
                                     <img src="./images/bello.jpg" width="77" height="80" />
                                 </Link>
                             </p>
-                            <p className="rowarticle2">
+                            <p className="rowarticleabout">
                                 Founder e CEO
-                                <br/>
+                                <br />
                                 Apaixonado por itens bélicos e tecnologia. Mais de 28 anos de experiência em consultorias de TI, atuando em projetos nas mais diversas áreas da TI.
                         </p>
                         </div>
-                        <div className="4u">
+                        <div className="6u">
                             <div className="articleheader">
-                                <Link to={`https://www.linkedin.com/in/valdvogel/`}>
-                                   José Valdvogel
+                                <Link to={`https://www.linkedin.com/in/cristina-abritta-65176b10/`}>
+                                    Cristina Abritta
                             </Link>
                             </div>
                             <p className="rowarticle1">
-                            <Link to={`https://www.linkedin.com/in/valdvogel/`}>
+                                <Link to={`https://www.linkedin.com/in/cristina-abritta-65176b10/`}>
+                                    <img src="./images/cristina.jpg" width="77" height="80" />
+                                </Link>
+                            </p>
+                            <p className="rowarticleabout">
+                                Founder e CFO
+                                <br />
+                                Empreendedora e empresária, com carreira em gestão e TI. Meus 5 pilares: família, filho, força, foco e fé!
+                            </p>
+                        </div>
+                        <div className="6u">
+                            <div className="articleheader">
+                                <Link to={`https://www.linkedin.com/in/valdvogel/`}>
+                                    José Valdvogel
+                            </Link>
+                            </div>
+                            <p className="rowarticle1">
+                                <Link to={`https://www.linkedin.com/in/valdvogel/`}>
                                     <img src="./images/jose.png" width="77" height="80" />
                                 </Link>
                             </p>
-                            <p className="rowarticle2">
+                            <p className="rowarticleabout">
                                 Founder e CTO
-                                <br/>
+                                <br />
                                 Amplamente conhecido como Zé. Adora trabalhar no desenvolvimento de produtos digitais e nas horas vagas gosta de dançar forró.
                             </p>
                         </div>
-                        <div className="4u">
+                        <div className="6u">
                             <div className="articleheader">
                                 <Link to={`https://www.linkedin.com/in/dmsimoes/`}>
                                     Daniel Simões
                             </Link>
                             </div>
                             <p className="rowarticle1">
-                            <Link to={`https://www.linkedin.com/in/dmsimoes/`}>
+                                <Link to={`https://www.linkedin.com/in/dmsimoes/`}>
                                     <img src="./images/daniel.jpg" width="77" height="80" />
                                 </Link>
                             </p>
-                            <p className="rowarticle2">
+                            <p className="rowarticleabout">
                                 Co-founder e COO
-                                <br/>
+                                <br />
                                 Daniel atua na área de tecnologia, interessado em ações de sustentabilidade e educação ambiental . Ele acredita que as pessoas podem fazer a diferença.
                             </p>
                         </div>
+                        
                     </div>
                 </div>
             </div>
