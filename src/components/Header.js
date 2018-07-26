@@ -26,6 +26,12 @@ class Header extends React.Component {
     componentDidMount = () => {
         //console.log(this.state);
     }
+    openNav = () => {
+        document.getElementById("mySidenav").style.width = "180px";
+    }
+    closeNav = () => {
+        document.getElementById("mySidenav").style.width = "0";
+    }
     render() {
 
         const login = localStorage.getItem('user') != null ? true : false;
@@ -43,10 +49,18 @@ class Header extends React.Component {
                             <NavLink to="/login" activeClassName="is-active">Entrar</NavLink>
                             <NavLink to="/help" activeClassName="is-active">Ajuda</NavLink>
                         </nav>
-                        <a href="#navPanel" className="navPanelToggle"><span className="fa fa-bars"></span></a>
+                        <div id="mySidenav" className="sidenav">
+                            <a href="javascript:void(0)" className="closebtn" onClick={this.closeNav}>&times;</a>
+                            <NavLink to="/sobrenos">Sobre Nós</NavLink>
+                            <NavLink to="/cadastro" exact={true}>Cadastrar</NavLink>
+                            <NavLink to="/login">Entrar</NavLink><br/>
+                            <NavLink to="/help">Ajuda </NavLink>
+                        </div>
+                        <a href="#navPanel" className="navPanelToggle"><span onClick={this.openNav} className="fa fa-bars"></span></a>
                     </div>
+
                 </header>
-                
+
             )
         } else {
             return (
@@ -55,10 +69,21 @@ class Header extends React.Component {
                         <NavLink to="/" className="logo">
                             <img src="https://s3.us-east-2.amazonaws.com/evolumewebappimages/logo_cut_white.png" width="100px" height="57px" />
                         </NavLink>
-                        <NavLink to="/locador" activeClassName="is-active">Sou Locador</NavLink>
-                        <NavLink to="/locatario" activeClassName="is-active" exact={true}>Locatario</NavLink>
-                        <NavLink to="/help" activeClassName="is-active">Ajuda</NavLink>
-                        <button onClick={this.onClick}>Logout</button>
+                        <nav id="nav">
+                            <NavLink to="/locador" activeClassName="is-active">Sou Locador</NavLink>
+                            <NavLink to="/locatario" activeClassName="is-active" exact={true}>Locatario</NavLink>
+                            <NavLink to="/help" activeClassName="is-active">Ajuda</NavLink>
+                            <button onClick={this.onClick}>Logout</button>
+                        </nav>
+
+                        <div id="mySidenav" className="sidenav">
+                            <a href="javascript:void(0)" className="closebtn" onClick={this.closeNav}>&times;</a>
+                            <NavLink to="/locador" activeClassName="is-active">Sou Locador</NavLink>
+                            <NavLink to="/locatario" activeClassName="is-active" exact={true}>Locatario</NavLink>
+                            <NavLink to="/help" activeClassName="is-active">Ajuda</NavLink>
+                            <button onClick={this.onClick}>Logout</button>
+                        </div>
+                        <a href="#navPanel" className="navPanelToggle"><span onClick={this.openNav} className="fa fa-bars"></span></a>
                     </div>
                 </header>
             )
