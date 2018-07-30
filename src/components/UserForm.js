@@ -4,7 +4,7 @@ import { history } from '../routes/AppRouter'
 import database from '../firebase/firebase';
 import { startAddUser } from '../actions/user';
 import { Encrypt } from './Cryptografy';
-import {send} from '../api/mail/mail';
+import { send } from '../api/mail/mail';
 
 class UserForm extends React.Component {
     constructor(props) {
@@ -47,9 +47,12 @@ class UserForm extends React.Component {
 
         // verifica se existe algum usuário com mesmo email.
         data.forEach((user) => {
-            if (user.email.toUpperCase() === e.toUpperCase()) {
-                this.setState(() => ({ error: "Esse email já está cadastrado!" }));
-                bln = false;
+            console.log(user);
+            if (!!user.email) {
+                if (user.email.toUpperCase() === e.toUpperCase()) {
+                    this.setState(() => ({ error: "Esse email já está cadastrado!" }));
+                    bln = false;
+                }
             }
         });
         return bln;
@@ -97,7 +100,7 @@ class UserForm extends React.Component {
 
             const id = Encrypt(this.state.email);
 
-            send(this.state.firstName,this.state.email,id,'cadastro');
+            send(this.state.firstName, this.state.email, id, 'cadastro');
             history.push('/sucesso');
         }
 
