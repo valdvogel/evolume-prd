@@ -79,23 +79,7 @@ const AboutUsPage = () => (
                                 Amplamente conhecido como Zé. Adora trabalhar no desenvolvimento de produtos digitais e nas horas vagas gosta de dançar forró.
                             </p>
                         </div>
-                        <div className="6u">
-                            <div className="articleheader">
-                                <Link to={`https://www.linkedin.com/in/dmsimoes/`}>
-                                    Daniel Simões
-                            </Link>
-                            </div>
-                            <p className="rowarticle1">
-                                <Link to={`https://www.linkedin.com/in/dmsimoes/`}>
-                                    <img src="./images/daniel.jpg" width="77" height="80" />
-                                </Link>
-                            </p>
-                            <p className="rowarticleabout">
-                                Co-founder e COO
-                                <br />
-                                Daniel atua na área de tecnologia, interessado em ações de sustentabilidade e educação ambiental . Ele acredita que as pessoas podem fazer a diferença.
-                            </p>
-                        </div>
+                        
                         
                     </div>
                 </div>
