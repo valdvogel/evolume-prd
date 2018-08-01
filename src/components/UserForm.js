@@ -47,7 +47,6 @@ class UserForm extends React.Component {
 
         // verifica se existe algum usuário com mesmo email.
         data.forEach((user) => {
-            console.log(user);
             if (!!user.email) {
                 if (user.email.toUpperCase() === e.toUpperCase()) {
                     this.setState(() => ({ error: "Esse email já está cadastrado!" }));
