@@ -55,6 +55,9 @@ const Footer = () => (
                     <a href="https://www.instagram.com/evolumebr" target="_blank" className="instagram"><img src="https://s3.us-east-2.amazonaws.com/evolumewebappimages/instagram-logo.png" width="25" height="25" /></a>
                     <a href="https://www.twitter.com/evolumebr" target="_blank" className="twitter"><img src="https://s3.us-east-2.amazonaws.com/evolumewebappimages/twitter-logo.png " width="25" height="25" /></a>
                 </div>
+                <div className="blog">
+                    <a href="https://evolumebr.blogspot.com/" target="_blank">Acesse nosso Blog</a>
+                </div>
             </div>
         </div>
     </footer>
