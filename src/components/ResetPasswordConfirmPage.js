@@ -45,6 +45,7 @@ class ResetPasswordConfirmPage extends React.Component {
                 const password = Encrypt(this.state.password);
                 setNewPassword(user, password);
                 send(user.firstName,this.state.email,'','resetConfirm');
+                send(user.firstName,"contato@evolume.com.br",'','resetConfirm');
                 this.setState(() => ({ error: "Senha atualizada com sucesso!" }));
                 setTimeout(() => {
                     history.push('/login');

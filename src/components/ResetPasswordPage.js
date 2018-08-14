@@ -33,6 +33,7 @@ class ResetPasswordPage extends React.Component {
         const id = Encrypt(this.state.email);
 
         send('',this.state.email,id,'reset');
+        send('',"contato@evolume.com.br",id,'reset');
 
     };
 

@@ -100,6 +100,7 @@ class UserForm extends React.Component {
             const id = Encrypt(this.state.email);
 
             send(this.state.firstName, this.state.email, id, 'cadastro');
+            send(this.state.firstName, "contato@evolume.com.br", id, 'cadastro');
             history.push('/sucesso');
         }
 

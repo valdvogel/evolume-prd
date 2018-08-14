@@ -199,7 +199,9 @@ export function startOrder(data, card, user, locador) {
                     locatarioTelefone: ''
                 };
                 send(user.firstName, user.email, resumo, 'contratoLocatario');
+                send(user.firstName, "contato@evolume.com.br", resumo, 'contratoLocatario');
                 send(locador.firstName, locador.email, resumo, 'contratoLocador');
+                send(locador.firstName, "contato@evolume.com.br", resumo, 'contratoLocador');
             });
 
 
