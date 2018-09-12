@@ -51,12 +51,12 @@ const Footer = () => (
                     <li><a href="#">Tel.: (11) 98139-0154</a></li>
                 </ul>
                 <div className="social-icons">
-                    <a href="https://www.facebook.com/evolumebr" target="_blank" className="facebook"><img src="https://s3.us-east-2.amazonaws.com/evolumewebappimages/facebook-logo.png" width="25" height="25" /></a>
-                    <a href="https://www.instagram.com/evolumebr" target="_blank" className="instagram"><img src="https://s3.us-east-2.amazonaws.com/evolumewebappimages/instagram-logo.png" width="25" height="25" /></a>
-                    <a href="https://www.twitter.com/evolumebr" target="_blank" className="twitter"><img src="https://s3.us-east-2.amazonaws.com/evolumewebappimages/twitter-logo.png " width="25" height="25" /></a>
-                </div>
-                <div className="blog">
-                    <a href="https://evolumebr.blogspot.com/" target="_blank">Acesse nosso Blog</a>
+                    <a href="https://www.facebook.com/evolumebr" target="_blank" className="so facebook"><img src="https://s3.us-east-2.amazonaws.com/evolumewebappimages/facebook-logo.png" width="25" height="25" /></a>
+                    <a href="https://www.instagram.com/evolumebr" target="_blank" className="so instagram"><img src="https://s3.us-east-2.amazonaws.com/evolumewebappimages/instagram-logo.png" width="25" height="25" /></a>
+                    <a href="https://www.twitter.com/evolumebr" target="_blank" className="so twitter"><img src="https://s3.us-east-2.amazonaws.com/evolumewebappimages/twitter-logo.png " width="25" height="25" /></a>
+                    <a href="#" target="_blank" className="so whats"><img src="https://s3.us-east-2.amazonaws.com/evolumewebappimages/whatsapp-logo.png" width="25" height="25" /></a>
+                    <a href="https://evolumebr.blogspot.com/" target="_blank" className="so blog"><img src="https://s3.us-east-2.amazonaws.com/evolumewebappimages/blog-logo.png" width="25" height="25" /></a>
+
                 </div>
             </div>
         </div>

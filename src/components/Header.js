@@ -58,6 +58,7 @@ class Header extends React.Component {
                             <NavLink to="/help">Ajuda</NavLink>
                         </div>
                         <a href="#navPanel" className="navPanelToggle"><span onClick={this.openNav} className="fa fa-bars"></span></a>
+                        
                     </div>
 
                 </header>
