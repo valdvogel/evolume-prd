@@ -86,6 +86,7 @@ class LocatarioPage extends React.Component {
                             description: (
                                 <div>
                                     <div className="price">R$ {data.price}</div>
+                                    <p className="info">Valor por diária</p>
                                     <p className="info">Contato : {data.contact}</p>
                                     <p className="info">Estrela : {data.rate} estrelas</p>
                                     <p className="info">Cidade : {data.city}</p>
