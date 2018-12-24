@@ -1,6 +1,9 @@
 {
   "name": "evolume-app",
   "version": "1.0.0",
+  "engines": {
+    "node": "9.5.0"
+  },
   "main": "index.js",
   "author": "Jose Valdvogel",
   "license": "MIT",
