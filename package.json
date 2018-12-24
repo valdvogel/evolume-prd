@@ -11,7 +11,7 @@
     "dev-server": "webpack-dev-server",
     "test": "webpack NODE_ENV=test ",
     "start": "node server/server.js",
-    "heroku-postbuild": "yarn run build:prd"
+    "heroku-postbuild": "npm run build:prd"
   },
   "dependencies": {
     "@appbaseio/reactivesearch": "^2.6.2",
